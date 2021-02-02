@@ -1,0 +1,28 @@
+﻿  csvparser.c
+D:\Files\Visual Studio projects\C lectures\text generator\Text Generator\csv\csvparser.c(19,9): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Files\Visual Studio projects\C lectures\text generator\Text Generator\csv\csvparser.c(45,3): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Files\Visual Studio projects\C lectures\text generator\Text Generator\csv\csvparser.c(125,39): error C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Files\Visual Studio projects\C lectures\text generator\Text Generator\csv\csvparser.c(128,38): error C4996: 'strerror': This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Files\Visual Studio projects\C lectures\text generator\Text Generator\csv\csvparser.c(130,17): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Files\Visual Studio projects\C lectures\text generator\Text Generator\csv\csvparser.c(131,17): error C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Files\Visual Studio projects\C lectures\text generator\Text Generator\csv\csvparser.c(188,13): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Files\Visual Studio projects\C lectures\text generator\Text Generator\csv\csvparser.c(230,5): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  debug.c
+  functions.c
+D:\Files\Visual Studio projects\C lectures\text generator\Text Generator\functions.c(16,55): warning C4047: функция: "const char *" отличается по уровням косвенного обращения от "int"
+D:\Files\Visual Studio projects\C lectures\text generator\Text Generator\functions.c(16,52): warning C4024: CsvParser_new: различные типы для формального и фактического параметров 2
+D:\Files\Visual Studio projects\C lectures\text generator\Text Generator\functions.c(23,56): warning C4047: =: "CsvRow *" отличается по уровням косвенного обращения от "int"
+D:\Files\Visual Studio projects\C lectures\text generator\Text Generator\functions.c(34,45): warning C4090: =: разные квалификаторы "const"
+D:\Files\Visual Studio projects\C lectures\text generator\Text Generator\functions.c(153,61): warning C4047: функция: "const char *" отличается по уровням косвенного обращения от "int"
+D:\Files\Visual Studio projects\C lectures\text generator\Text Generator\functions.c(153,58): warning C4024: CsvParser_new: различные типы для формального и фактического параметров 2
+D:\Files\Visual Studio projects\C lectures\text generator\Text Generator\functions.c(161,56): warning C4047: =: "CsvRow *" отличается по уровням косвенного обращения от "int"
+D:\Files\Visual Studio projects\C lectures\text generator\Text Generator\functions.c(172,45): warning C4090: =: разные квалификаторы "const"
+D:\Files\Visual Studio projects\C lectures\text generator\Text Generator\functions.c(177,33): error C2232: ->date: левый операнд имеет тип "struct", используйте "."
+D:\Files\Visual Studio projects\C lectures\text generator\Text Generator\functions.c(177,18): error C2198: datesMatch: слишком мало аргументов для вызова
+  main.c
+  structs.c
+  tempalateParser.c
+D:\Files\Visual Studio projects\C lectures\text generator\Text Generator\tempalateParser.c(14,8): warning C4013: error: нет определения; предполагается "extern" с возвратом типа "int"
+  utils.c
+D:\Files\Visual Studio projects\C lectures\text generator\Text Generator\utils.c(8,9): warning C4129: :
+  Создание кода...

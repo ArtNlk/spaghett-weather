@@ -1,0 +1,2 @@
+D:\Files\Visual Studio projects\C lectures\text generator\Text Generator\Debug\Text Generator.exe
+D:\Files\Visual Studio projects\C lectures\text generator\Text Generator\Debug\Text Generator.pdb
