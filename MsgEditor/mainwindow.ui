@@ -1,0 +1,1719 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>620</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1280</width>
+    <height>620</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Message Editor</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="openFileButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Open file...</string>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="messageTextEdit">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>431</width>
+      <height>211</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>13</y>
+      <width>47</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>File:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="fileNameLabel">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>13</y>
+      <width>1111</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>None</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="requiredFlagsGroupBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>260</y>
+      <width>191</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Required flags</string>
+    </property>
+    <widget class="QCheckBox" name="rainCheckbox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>70</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Дождь</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="snowCheckbox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>70</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Снег</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="hailCheckbox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>70</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Град</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="frostCheckbox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>80</y>
+       <width>70</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Иней</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="icyroadsCheckbox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>100</y>
+       <width>70</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Гололед</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="fogCheckbox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>120</y>
+       <width>70</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Туман</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="stormCheckbox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>140</y>
+       <width>70</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Ураган</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="lightningCheckbox">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>20</y>
+       <width>70</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Гроза</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="snowstormCheckbox">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>40</y>
+       <width>70</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Метель</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="freezingCheckbox">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>60</y>
+       <width>70</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Мороз</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="dustCheckbox">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>80</y>
+       <width>70</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Пыль</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="smogCheckbox">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>100</y>
+       <width>70</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Смог</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="icingCheckbox">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>120</y>
+       <width>101</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Обледенение</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="emergencyCheckbox">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>140</y>
+       <width>70</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>ЧС</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="variablerangesGroupbox">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>40</y>
+      <width>821</width>
+      <height>521</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Variable ranges</string>
+    </property>
+    <widget class="QGroupBox" name="dayGroupBox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>181</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Day</string>
+     </property>
+     <widget class="QSpinBox" name="minDaySpinbox">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>20</y>
+        <width>42</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>31</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="minLabel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>21</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Min</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="maxLabel">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>20</y>
+        <width>21</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Max</string>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="maxDaySpinbox">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>20</y>
+        <width>42</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>31</number>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="dayGroupBox_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>90</y>
+       <width>181</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Month</string>
+     </property>
+     <widget class="QSpinBox" name="minMonthSpinbox">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>20</y>
+        <width>42</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>12</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="minLabel_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>21</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Min</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="maxLabel_2">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>20</y>
+        <width>21</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Max</string>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="maxMonthSpinbox">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>20</y>
+        <width>42</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>12</number>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="dayGroupBox_3">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>40</y>
+       <width>181</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Night temp</string>
+     </property>
+     <widget class="QSpinBox" name="minNighttempSpinbox">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>20</y>
+        <width>42</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="minimum">
+       <number>-200</number>
+      </property>
+      <property name="maximum">
+       <number>200</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="minLabel_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>21</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Min</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="maxLabel_3">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>20</y>
+        <width>21</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Max</string>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="maxNighttempSpinbox">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>20</y>
+        <width>42</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="minimum">
+       <number>-200</number>
+      </property>
+      <property name="maximum">
+       <number>200</number>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="dayGroupBox_4">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>90</y>
+       <width>181</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Day temp</string>
+     </property>
+     <widget class="QSpinBox" name="minDaytempSpinbox">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>20</y>
+        <width>42</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="minimum">
+       <number>-200</number>
+      </property>
+      <property name="maximum">
+       <number>200</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="minLabel_4">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>21</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Min</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="maxLabel_4">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>20</y>
+        <width>21</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Max</string>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="maxDaytempSpinbox">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>20</y>
+        <width>42</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="minimum">
+       <number>-200</number>
+      </property>
+      <property name="maximum">
+       <number>200</number>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="dayGroupBox_5">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>140</y>
+       <width>181</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Feels like</string>
+     </property>
+     <widget class="QSpinBox" name="minFeelslikeSpinbox">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>20</y>
+        <width>42</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="minimum">
+       <number>-200</number>
+      </property>
+      <property name="maximum">
+       <number>200</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="minLabel_5">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>21</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Min</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="maxLabel_5">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>20</y>
+        <width>21</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Max</string>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="maxFeelslikeSpinbox">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>20</y>
+        <width>42</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="minimum">
+       <number>-200</number>
+      </property>
+      <property name="maximum">
+       <number>200</number>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="dayGroupBox_6">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>190</y>
+       <width>181</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Precipitation amount</string>
+     </property>
+     <widget class="QSpinBox" name="minPrecipitationSpinbox">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>20</y>
+        <width>42</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>5000</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="minLabel_6">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>21</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Min</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="maxLabel_6">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>20</y>
+        <width>21</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Max</string>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="maxPrecipitationSpinbox">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>20</y>
+        <width>42</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>5000</number>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="dayGroupBox_7">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>240</y>
+       <width>181</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Wind speed</string>
+     </property>
+     <widget class="QSpinBox" name="minWindspeedSpinbox">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>20</y>
+        <width>42</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>1000</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="minLabel_7">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>21</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Min</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="maxLabel_7">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>20</y>
+        <width>21</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Max</string>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="maxWindspeedSpinbox">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>20</y>
+        <width>42</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>1000</number>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="dayGroupBox_8">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>290</y>
+       <width>181</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Wind gust speed</string>
+     </property>
+     <widget class="QSpinBox" name="minWindgustSpinbox">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>20</y>
+        <width>42</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>2000</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="minLabel_8">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>21</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Min</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="maxLabel_8">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>20</y>
+        <width>21</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Max</string>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="maxWindgustSpinbox">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>20</y>
+        <width>42</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>2000</number>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="dayGroupBox_10">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>340</y>
+       <width>181</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Pressure</string>
+     </property>
+     <widget class="QSpinBox" name="minPressureSpinbox">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>20</y>
+        <width>42</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>1500</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="minLabel_10">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>21</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Min</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="maxLabel_10">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>20</y>
+        <width>21</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Max</string>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="maxPressureSpinbox">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>20</y>
+        <width>42</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>1500</number>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="dayGroupBox_11">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>40</y>
+       <width>181</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Prev day night temp</string>
+     </property>
+     <widget class="QSpinBox" name="minPrevNighttempSpinbox">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>20</y>
+        <width>42</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="minimum">
+       <number>-200</number>
+      </property>
+      <property name="maximum">
+       <number>200</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="minLabel_11">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>21</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Min</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="maxLabel_11">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>20</y>
+        <width>21</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Max</string>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="maxPrevNighttempSpinbox">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>20</y>
+        <width>42</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="minimum">
+       <number>-200</number>
+      </property>
+      <property name="maximum">
+       <number>200</number>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="dayGroupBox_12">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>90</y>
+       <width>181</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Prev day day temp</string>
+     </property>
+     <widget class="QSpinBox" name="minPrevDaytempSpinbox">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>20</y>
+        <width>42</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="minimum">
+       <number>-200</number>
+      </property>
+      <property name="maximum">
+       <number>200</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="minLabel_12">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>21</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Min</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="maxLabel_12">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>20</y>
+        <width>21</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Max</string>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="maxPrevDaytempSpinbox">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>20</y>
+        <width>42</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="minimum">
+       <number>-200</number>
+      </property>
+      <property name="maximum">
+       <number>200</number>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="dayGroupBox_13">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>140</y>
+       <width>181</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Prev day feels like</string>
+     </property>
+     <widget class="QSpinBox" name="minPrevFeelslikeSpinbox">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>20</y>
+        <width>42</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="minimum">
+       <number>-200</number>
+      </property>
+      <property name="maximum">
+       <number>200</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="minLabel_13">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>21</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Min</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="maxLabel_13">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>20</y>
+        <width>21</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Max</string>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="maxPrevFeelslikeSpinbox">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>20</y>
+        <width>42</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="minimum">
+       <number>-200</number>
+      </property>
+      <property name="maximum">
+       <number>200</number>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="dayGroupBox_14">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>190</y>
+       <width>181</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Prev day precipitation amount</string>
+     </property>
+     <widget class="QSpinBox" name="minPrevPrecipitationSpinbox">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>20</y>
+        <width>42</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>5000</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="minLabel_14">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>21</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Min</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="maxLabel_14">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>20</y>
+        <width>21</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Max</string>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="maxPrevPrecipitationSpinbox">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>20</y>
+        <width>42</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>5000</number>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="dayGroupBox_15">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>240</y>
+       <width>181</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Prev day wind speed</string>
+     </property>
+     <widget class="QSpinBox" name="minPrevWindspeedSpinbox">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>20</y>
+        <width>42</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>1000</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="minLabel_15">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>21</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Min</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="maxLabel_15">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>20</y>
+        <width>21</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Max</string>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="maxPrevWindspeedSpinbox">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>20</y>
+        <width>42</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>1000</number>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="dayGroupBox_16">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>290</y>
+       <width>181</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Prev day wind gust speed</string>
+     </property>
+     <widget class="QSpinBox" name="minPrevWindgustSpinbox">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>20</y>
+        <width>42</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>2000</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="minLabel_16">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>21</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Min</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="maxLabel_16">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>20</y>
+        <width>21</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Max</string>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="maxPrevWindgustSpinbox">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>20</y>
+        <width>42</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>2000</number>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="dayGroupBox_17">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>340</y>
+       <width>181</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Prev day pressure</string>
+     </property>
+     <widget class="QSpinBox" name="minPrevPressureSpinbox">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>20</y>
+        <width>42</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>1500</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="minLabel_17">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>21</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Min</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="maxLabel_17">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>20</y>
+        <width>21</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Max</string>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="maxPrevPressureSpinbox">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>20</y>
+        <width>42</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>1500</number>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QCheckBox" name="prevDayRequiredCheckbox">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>20</y>
+       <width>171</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Previous day required</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="addMessageButton">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>180</y>
+       <width>181</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Add message</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="msgTypeCombobox">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>150</y>
+       <width>121</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>начало</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>данные</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>сообщение</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>конец</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>150</y>
+       <width>51</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Msg type:</string>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>40</y>
+       <width>231</width>
+       <height>471</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Insert variable placeholders</string>
+     </property>
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>211</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Day temp</string>
+      </property>
+      <widget class="QPushButton" name="insertMinDayTempButton">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>91</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Min</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="insertMaxDayTempButton">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>20</y>
+         <width>91</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Max</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_4">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>170</y>
+        <width>211</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Wind speed</string>
+      </property>
+      <widget class="QPushButton" name="insertMinWindSpeedButton">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>91</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Min</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="insertMaxWindSpeedButton">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>20</y>
+         <width>91</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Max</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_6">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>320</y>
+        <width>211</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Precipitation amount</string>
+      </property>
+      <widget class="QPushButton" name="insertPrecipitationAmountButton">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>191</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Value</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_7">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>270</y>
+        <width>211</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Wind dir</string>
+      </property>
+      <widget class="QPushButton" name="insertWindDirButton">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>191</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Value</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_8">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>220</y>
+        <width>211</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Wind gust speed</string>
+      </property>
+      <widget class="QPushButton" name="insertWindGustSpeedButton">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>191</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Value</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_9">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>370</y>
+        <width>211</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Pressure</string>
+      </property>
+      <widget class="QPushButton" name="insertPressureButton">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>191</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Value</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_5">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>120</y>
+        <width>211</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Feels like temp</string>
+      </property>
+      <widget class="QPushButton" name="insertMinFeelslikeButton">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>91</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Min</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="insertMaxFeelslikeButton">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>20</y>
+         <width>91</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Max</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>70</y>
+        <width>211</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Night temp</string>
+      </property>
+      <widget class="QPushButton" name="insertMinNightTempButton">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>91</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Min</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="insertMaxNightTempButton">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>20</y>
+         <width>91</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Max</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1280</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
